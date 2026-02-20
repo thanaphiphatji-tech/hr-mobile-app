@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/my-react-app/',   // 👈 สำคัญมากสำหรับ GitHub Pages
+  base: '/hr-mobile-app/',   // 👈 สำคัญมากสำหรับ GitHub Pages
 
   server: {
     port: 5173,
