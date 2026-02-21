@@ -21,12 +21,12 @@ export async function apiGet(path, params = {}) {
 /* POST */
 export async function apiPost(path, body = {}) {
 
+  const formData = new URLSearchParams();
+  formData.append('payload', JSON.stringify(body));
+
   const res = await fetch(`${BASE_URL}?path=${path}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(body)
+    body: formData
   });
 
   const json = await res.json();
