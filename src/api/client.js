@@ -1,4 +1,7 @@
-const BASE_URL = '/gas';
+const BASE_URL =
+  import.meta.env.DEV
+    ? '/gas'
+    : 'https://script.google.com/macros/s/AKfycby1YzD0g7VJq-NPMfulSu6re6Ikwh7HeU3uwl_OAIWXCadHvtAzT8oork-KJbwCdFvKmA/exec';
 
 /* GET */
 export async function apiGet(path, params = {}) {
