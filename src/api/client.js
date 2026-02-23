@@ -1,7 +1,7 @@
 const BASE_URL =
   import.meta.env.DEV
     ? '/gas'
-    : 'https://script.google.com/macros/s/AKfycby1YzD0g7VJq-NPMfulSu6re6Ikwh7HeU3uwl_OAIWXCadHvtAzT8oork-KJbwCdFvKmA/exec';
+    : 'https://script.google.com/macros/s/AKfycbyEX2_dopaayoa10XBwG1zqxI0_GOsWeLTNIML8O5TqlLPNHmBfuKC0GfSHEOzPylQ82g/exec';
 
 /* GET */
 export async function apiGet(path, params = {}) {
@@ -36,7 +36,7 @@ export async function apiPost(path, body = {}) {
 
   if (!json.success) {
     throw new Error(json.data?.error || 'Unknown error');
-  }
+  } 
 
   return json.data;
 }
