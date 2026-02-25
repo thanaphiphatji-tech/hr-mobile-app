@@ -124,6 +124,12 @@ const LoginPage = ({ onLogin }) => {
             {loading ? 'กำลังเข้าสู่ระบบ...' : 'เข้าสู่ระบบ'}
           </button>
 
+            {/* 🔥 ปุ่มกลับ อยู่ล่างสุด */} 
+            <button 
+                type="button" 
+                className="w-full mt-2 text-xs text-gray-400 hover:text-[#46bdc6] transition" >
+                 ← กลับหน้าเลือกระบบ 
+            </button>
         </form>
 
       </div>
