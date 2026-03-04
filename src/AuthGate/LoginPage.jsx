@@ -85,7 +85,7 @@ return (
             value={username}
             onChange={e => setUsername(e.target.value)}
             className="w-full mt-1 bg-gray-800 border border-gray-700 rounded-xl p-2 text-sm focus:outline-none focus:border-[#46bdc6]"
-            placeholder="EMP-2024001"
+            placeholder="TESTUSER"
           />
         </div>
 
